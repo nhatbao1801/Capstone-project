@@ -3,7 +3,7 @@ from urllib.request import urlopen
 from flask import abort, request
 from functools import wraps
 from jose import jwt
-from config import Variables
+from starter.config import Variables
 
 
 AUTH0_DOMAIN = Variables.AUTH0_DOMAIN

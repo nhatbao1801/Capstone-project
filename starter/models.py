@@ -1,7 +1,7 @@
 from flask_migrate import Migrate
 from sqlalchemy import Column, String, Integer
 from flask_sqlalchemy import SQLAlchemy
-from config import Variables
+from starter.config import Variables
 
 db = SQLAlchemy()
 DATABASE_PATH = Variables.DATABASE_PATH
