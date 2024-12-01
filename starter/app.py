@@ -6,7 +6,7 @@ from flask_cors import CORS
 
 
 def create_app(test_config=None):
-
+    os.environ['FLASK_APP'] = 'app.py'
     app = Flask(__name__)
     CORS(app)
     setup_db(app)
