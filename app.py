@@ -10,6 +10,9 @@ def create_app(test_config=None):
     CORS(app)
     setup_db(app)
     
+    @app.route('/')
+    def health():
+        return jsonify({'health': 'Running!!'}), 200
 
     @app.after_request
     def after_request(response):
